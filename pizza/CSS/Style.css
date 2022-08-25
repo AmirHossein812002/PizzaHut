@@ -237,6 +237,7 @@
     height: 80%;
     display: flex;
     align-items: center;
+    justify-content: center;
 
     transition: all 0.3s;
 }
@@ -463,4 +464,33 @@
 .toppings.vegetable.current {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+}
+
+.customize-specifications {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+    background-color: #fde9d2;
+    padding: 2.4rem;
+    border-radius: 4.4rem;
+    box-shadow: 0 1.2rem 2.4rem #00000030;
+}
+
+.customize-specification {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    width: 22rem;
+}
+
+.customize-specification-text {
+    font-size: 1.8rem;
+}
+
+.output {
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+    justify-content: center;
+    align-items: center;
 }
