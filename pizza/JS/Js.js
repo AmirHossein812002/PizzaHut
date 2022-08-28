@@ -145,3 +145,55 @@ for (let i = 0; i < toppingEl.length; i++) {
             }
     );
 }
+
+//******
+//FOOTER
+//******
+
+const yearEl = document.querySelector(".year");
+const currenYear = new Date().getFullYear();
+yearEl.textContent = currenYear;
+
+//******
+//MOBILE
+//******
+
+const btnNavEl = document.querySelector(".btn-mobile-nav");
+const headerEl = document.querySelector(".header");
+btnNavEl.addEventListener('click', function () {
+    headerEl.classList.toggle("nav-open");
+});
+
+//**********
+//STICKY NAV
+//**********
+
+const sectionHeroEl = document.querySelector(".section-hero");
+const observer = new IntersectionObserver(function (entries) {
+    const ent = entries[0];
+    if (ent.isIntersecting) {
+        document.body.classList.remove("sticky");
+    } else {
+        document.body.classList.add("sticky");
+    }
+}, {
+    // In the viewport
+    root: null,
+    threshold: 0,
+    rootMargin: "-80px"
+});
+observer.observe(sectionHeroEl);
+
+//*****************************
+//CUSTOMIZE SPECIFICATION WIDTH
+//*****************************
+
+const calEl = document.querySelector(".calories");
+
+window.matchMedia("(max-width:39em)").addEventListener('change', function (e) {
+    if (window.matchMedia("(max-width:39em)").matches) {
+        calEl.textContent = "cal";
+    } else {
+        calEl.textContent = "calories";
+    }
+});
