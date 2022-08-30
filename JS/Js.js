@@ -190,7 +190,15 @@ observer.observe(sectionHeroEl);
 
 const calEl = document.querySelector(".calories");
 
-window.matchMedia("(max-width:39em)").addEventListener('change', function (e) {
+// window.matchMedia("(max-width:39em)").addEventListener('change', function (e) {
+//     if (window.matchMedia("(max-width:39em)").matches) {
+//         calEl.textContent = "cal";
+//     } else {
+//         calEl.textContent = "calories";
+//     }
+// });
+
+window.matchMedia("(max-width:39em)").addListener(function () {
     if (window.matchMedia("(max-width:39em)").matches) {
         calEl.textContent = "cal";
     } else {
