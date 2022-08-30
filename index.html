@@ -1,0 +1,1229 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="PizzaHut is an online store that you can order our chef made pizza or you
+        can create your own pizza by choosing every details of it!">
+        
+        <title>PizzaHut &mdash; create your own pizza!</title>
+        
+        <link rel="icon" href="img/icon/PizzaHutIcon.png">
+        
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet"
+              href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rubik+Microbe&family=Rubik:wght@400;500;600;700&display=swap">
+        
+        <link rel="stylesheet" href="CSS/Style.css">
+        <link rel="stylesheet" href="CSS/General.css">
+        <link rel="stylesheet" href="CSS/Queries.css">
+        
+        <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
+        <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+        <script defer src="JS/Js.js"></script>
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+        <header class="header">
+            <a class="logo" href="#">
+                <lord-icon
+                        src="https://cdn.lordicon.com/jpdtnwas.json"
+                        class="logo-icon"
+                        trigger="hover"
+                        colors="primary:#f7921e,secondary:#f7921e"
+                        stroke="85">
+                </lord-icon>
+                <p class="logo-text">PizzaHut</p>
+            </a>
+            <nav class="main-nav">
+                <ul class="main-nav-list">
+                    <li>
+                        <a href="#chef" class="main-nav-link">
+                            Chef made
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#features" class="main-nav-link">
+                            Features
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#customize" class="btn btn-main">
+                            Customize
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+            <button class="btn-mobile-nav">
+                <svg class="ham hamRotate ham7" viewBox="0 0 100 100" width="80" onclick="this.classList.toggle('active')">
+                    <path
+                            class="line top"
+                            d="m 70,33 h -40 c 0,0 -6,1.368796 -6,8.5 0,7.131204 6,8.5013 6,8.5013 l 20,-0.0013" />
+                    <path
+                            class="line middle"
+                            d="m 70,50 h -40" />
+                    <path
+                            class="line bottom"
+                            d="m 69.575405,67.073826 h -40 c -5.592752,0 -6.873604,-9.348582 1.371031,-9.348582 8.244634,0 19.053564,21.797129 19.053564,12.274756 l 0,-40" />
+                </svg>
+            </button>
+        </header>
+        <main>
+            <section class="section-hero">
+                <div class="hero">
+                    <div class="hero-text-box">
+                        <h1 class="heading-primary">
+                            Order chef made pizza or your own special custom pizza
+                        </h1>
+                        
+                        <p class="hero-text">
+                            PizzaHut is an online pizza store that you can order chef made pizza ,or you can customize
+                            your own pizza by choosing every single detail of it such as dough, sauce, toppings which
+                            are in a very big variety of options!
+                        </p>
+                        
+                        <a class="btn btn-main margin-right-sm" href="#customize">
+                            Customize
+                        </a>
+                        
+                        <a class="btn btn-second" href="#chef">
+                            Chef made
+                            <lord-icon
+                                    src="https://cdn.lordicon.com/iifryyua.json"
+                                    trigger="loop"
+                                    style="width:1.8rem;height:1.8rem;">
+                            </lord-icon>
+                        </a>
+                    </div>
+                    <img src="img/PizzaHero.png" alt="pizza, sauce and garlic image" class="hero-img"
+                         loading="lazy">
+                </div>
+            </section>
+            
+            <section class="section-chef-made" id="chef">
+                <div class="container">
+                    <p class="sub-title">CHEF MADE</p>
+                    <h2 class="heading-secondary">Order from variety of our chef made pizza from around the world</h2>
+                </div>
+                <div class="grid grid--2-cols container">
+                    <div class="pizza">
+                        <div class="pizza-img-box">
+                            <img class="pizza-img" src="img/pizza/ItalianPizza.jpg" alt="italian pizza image"
+                                 loading="lazy">
+                        </div>
+                        <div class="pizza-content">
+                            <div class="tags">
+                                <span class="tag">Italian</span>
+                                <span class="tag">Basil</span>
+                            </div>
+                            
+                            <p class="pizza-name">Italian pizza</p>
+                            
+                            <ul class="pizza-attributes">
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/vaeagfzc.json"
+                                            class="icon"
+                                            trigger="hover"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>$20</strong></span>
+                                </li>
+                                
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/zbdlroww.json"
+                                            class="icon"
+                                            trigger="hover"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>800</strong> calories</span>
+                                </li>
+                                
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/mdgrhyca.json"
+                                            class="icon"
+                                            trigger="morph"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>4.8</strong> Rating (1.2k)</span>
+                                </li>
+                            </ul>
+                            <div class="buy">
+                                <div class="counter">
+                                    <button class="plus">
+                                        &plus;
+                                    </button>
+                                    
+                                    <p class="number">00</p>
+                                    
+                                    <button class="minus">
+                                        &minus;
+                                    </button>
+                                </div>
+                                <a href="#" class="buy-btn">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/dnoiydox.json"
+                                            class="buy-btn-icon"
+                                            trigger="hover"
+                                            colors="primary:#000000,secondary:#000000"
+                                            stroke="85">
+                                    </lord-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pizza">
+                        <div class="pizza-img-box">
+                            <img class="pizza-img" src="img/pizza/IndianPizza.jpg" alt="indian pizza image"
+                                 loading="lazy">
+                        </div>
+                        <div class="pizza-content">
+                            <div class="tags">
+                                <span class="tag">Indian</span>
+                                <span class="tag">Spicy</span>
+                            </div>
+                            
+                            <p class="pizza-name">Indian pizza</p>
+                            
+                            <ul class="pizza-attributes">
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/vaeagfzc.json"
+                                            class="icon"
+                                            trigger="hover"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>$18</strong></span>
+                                </li>
+                                
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/zbdlroww.json"
+                                            class="icon"
+                                            trigger="hover"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>1.2k</strong> calories</span>
+                                </li>
+                                
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/mdgrhyca.json"
+                                            class="icon"
+                                            trigger="morph"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>4.7</strong> Rating (900)</span>
+                                </li>
+                            </ul>
+                            <div class="buy">
+                                <div class="counter">
+                                    <button class="plus">
+                                        &plus;
+                                    </button>
+                                    
+                                    <p class="number">00</p>
+                                    
+                                    <button class="minus">
+                                        &minus;
+                                    </button>
+                                </div>
+                                <a href="#" class="buy-btn">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/dnoiydox.json"
+                                            class="buy-btn-icon"
+                                            trigger="hover"
+                                            colors="primary:#000000,secondary:#000000"
+                                            stroke="85">
+                                    </lord-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pizza">
+                        <div class="pizza-img-box">
+                            <img class="pizza-img" src="img/pizza/OnionPizza.jpg" alt="onion pizza image"
+                                 loading="lazy">
+                        </div>
+                        <div class="pizza-content">
+                            <div class="tags">
+                                <span class="tag">Onion</span>
+                                <span class="tag">Mid-spicy</span>
+                            </div>
+                            
+                            <p class="pizza-name">Onion pizza</p>
+                            
+                            <ul class="pizza-attributes">
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/vaeagfzc.json"
+                                            class="icon"
+                                            trigger="hover"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>$15</strong></span>
+                                </li>
+                                
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/zbdlroww.json"
+                                            class="icon"
+                                            trigger="hover"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>650</strong> calories</span>
+                                </li>
+                                
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/mdgrhyca.json"
+                                            class="icon"
+                                            trigger="morph"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>4.8</strong> Rating (2.3k)</span>
+                                </li>
+                            </ul>
+                            <div class="buy">
+                                <div class="counter">
+                                    <button class="plus">
+                                        &plus;
+                                    </button>
+                                    
+                                    <p class="number">00</p>
+                                    
+                                    <button class="minus">
+                                        &minus;
+                                    </button>
+                                </div>
+                                <a href="#" class="buy-btn">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/dnoiydox.json"
+                                            class="buy-btn-icon"
+                                            trigger="hover"
+                                            colors="primary:#000000,secondary:#000000"
+                                            stroke="85">
+                                    </lord-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="pizza">
+                        <div class="pizza-img-box">
+                            <img class="pizza-img" src="img/pizza/SausagePizza.jpg" alt="sausage pizza image"
+                                 loading="lazy">
+                        </div>
+                        <div class="pizza-content">
+                            <div class="tags">
+                                <span class="tag">Sausage</span>
+                            </div>
+                            
+                            <p class="pizza-name">Sausage pizza</p>
+                            
+                            <ul class="pizza-attributes">
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/vaeagfzc.json"
+                                            class="icon"
+                                            trigger="hover"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>$19</strong></span>
+                                </li>
+                                
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/zbdlroww.json"
+                                            class="icon"
+                                            trigger="hover"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>1.5k</strong> calories</span>
+                                </li>
+                                
+                                <li class="pizza-attribute">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/mdgrhyca.json"
+                                            class="icon"
+                                            trigger="morph"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span><strong>4.6</strong> Rating (3.8k)</span>
+                                </li>
+                            </ul>
+                            <div class="buy">
+                                <div class="counter">
+                                    <button class="plus">
+                                        &plus;
+                                    </button>
+                                    
+                                    <p class="number">00</p>
+                                    
+                                    <button class="minus">
+                                        &minus;
+                                    </button>
+                                </div>
+                                <a href="#" class="buy-btn">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/dnoiydox.json"
+                                            class="buy-btn-icon"
+                                            trigger="hover"
+                                            colors="primary:#000000,secondary:#000000"
+                                            stroke="85">
+                                    </lord-icon>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="side-bar">
+                        <div class="side">
+                            <div class="side-img-box">
+                                <img src="img/side/Ketchup.jpg" alt="Ketchup sauce image" loading="lazy"
+                                     class="side-img">
+                            </div>
+                            
+                            <p class="side-text">Ketchup</p>
+                            
+                            <div class="counter">
+                                <button class="plus">
+                                    &plus;
+                                </button>
+                                
+                                <p class="number">00</p>
+                                
+                                <button class="minus">
+                                    &minus;
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="side">
+                            <div class="side-img-box">
+                                <img src="img/side/Pesto.jpg" alt="Pesto sauce image" loading="lazy" class="side-img">
+                            </div>
+                            
+                            <p class="side-text">Pesto</p>
+                            
+                            <div class="counter">
+                                <button class="plus">
+                                    &plus;
+                                </button>
+                                
+                                <p class="number">00</p>
+                                
+                                <button class="minus">
+                                    &minus;
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="side">
+                            <div class="side-img-box">
+                                <img src="img/side/Mayonnaise.jpg" alt="Mayonnaise sauce image" loading="lazy"
+                                     class="side-img">
+                            </div>
+                            
+                            <p class="side-text">Mayonnaise</p>
+                            
+                            <div class="counter">
+                                <button class="plus">
+                                    &plus;
+                                </button>
+                                
+                                <p class="number">00</p>
+                                
+                                <button class="minus">
+                                    &minus;
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="side">
+                            <div class="side-img-box">
+                                <img src="img/side/Jalopino.jpg" alt="Jalopino sauce image" loading="lazy"
+                                     class="side-img">
+                            </div>
+                            
+                            <p class="side-text">Jalopino</p>
+                            
+                            <div class="counter">
+                                <button class="plus">
+                                    &plus;
+                                </button>
+                                
+                                <p class="number">00</p>
+                                
+                                <button class="minus">
+                                    &minus;
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="side">
+                            <div class="side-img-box">
+                                <img src="img/side/Soda.jpg" alt="Soda image" loading="lazy" class="side-img">
+                            </div>
+                            
+                            <p class="side-text">Soda</p>
+                            
+                            <div class="counter">
+                                <button class="plus">
+                                    &plus;
+                                </button>
+                                
+                                <p class="number">00</p>
+                                
+                                <button class="minus">
+                                    &minus;
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="side">
+                            <div class="side-img-box">
+                                <img src="img/side/CaesarSalad.jpg" alt="Caesar salad image" loading="lazy"
+                                     class="side-img">
+                            </div>
+                            
+                            <p class="side-text">Caesar</p>
+                            
+                            <div class="counter">
+                                <button class="plus">
+                                    &plus;
+                                </button>
+                                
+                                <p class="number">00</p>
+                                
+                                <button class="minus">
+                                    &minus;
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="side">
+                            <div class="side-img-box">
+                                <img src="img/side/Chips.jpg" alt="Chips image" loading="lazy" class="side-img">
+                            </div>
+                            
+                            <p class="side-text">Chips</p>
+                            
+                            <div class="counter">
+                                <button class="plus">
+                                    &plus;
+                                </button>
+                                
+                                <p class="number">00</p>
+                                
+                                <button class="minus">
+                                    &minus;
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <a href="#" class="side-buy-btn">
+                            <lord-icon
+                                    src="https://cdn.lordicon.com/dnoiydox.json"
+                                    class="side-buy-btn-icon"
+                                    trigger="hover"
+                                    colors="primary:#000000,secondary:#000000"
+                                    stroke="85">
+                            </lord-icon>
+                        </a>
+                    </div>
+                    
+                    <a class="link" href="#">More
+                        <lord-icon
+                                src="https://cdn.lordicon.com/iifryyua.json"
+                                trigger="loop"
+                                colors="primary:#f7921e"
+                                style="width:2.4rem;height:2.4rem;">
+                        </lord-icon>
+                    </a>
+                </div>
+            </section>
+            
+            <section class="section-feature" id="features">
+                <div class="container center">
+                    <p class="sub-title">Features</p>
+                    <h2 class="heading-secondary">More than just an online pizza store!</h2>
+                </div>
+                
+                <div class="container">
+                    <div class="features  grid grid--4-cols">
+                        <div class="feature">
+                            <lord-icon
+                                    src="https://cdn.lordicon.com/poblyvkl.json"
+                                    class="feature-icon"
+                                    trigger="hover"
+                                    colors="primary:#f7921e,secondary:#f7921e"
+                                    stroke="70">
+                            </lord-icon>
+                            <div class="feature-text-box">
+                                <p class="feature-title">Fastest delivery</p>
+                                <p class="feature-description">
+                                    We are open 24/7. Express delivery will take just a minute. fastest
+                                    delivery ever.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            
+                            <lord-icon
+                                    src="https://cdn.lordicon.com/hdiorcun.json"
+                                    class="feature-icon"
+                                    trigger="hover"
+                                    colors="primary:#f7921e,secondary:#f7921e"
+                                    stroke="70">
+                            </lord-icon>
+                            <div class="feature-text-box">
+                                <p class="feature-title">Eat healthy</p>
+                                <p class="feature-description">
+                                    Ingredients are fresh, organic and bought daily from local market. start
+                                    eating healthy.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <lord-icon
+                                    src="https://cdn.lordicon.com/itmmouju.json"
+                                    class="feature-icon"
+                                    trigger="hover"
+                                    colors="primary:#f7921e,secondary:#f7921e"
+                                    stroke="70">
+                            </lord-icon>
+                            
+                            <div class="feature-text-box">
+                                <p class="feature-title">Be a chef!</p>
+                                <p class="feature-description">
+                                    You can make you own special pizza and customize every detail and ingredients of it.
+                                </p>
+                            </div>
+                        </div>
+                        
+                        <div class="feature">
+                            <lord-icon
+                                    src="https://cdn.lordicon.com/gqzfzudq.json"
+                                    class="feature-icon"
+                                    trigger="hover"
+                                    colors="primary:#f7921e,secondary:#f7921e"
+                                    stroke="70">
+                            </lord-icon>
+                            
+                            <div class="feature-text-box">
+                                <p class="feature-title">For any taste</p>
+                                <p class="feature-description">
+                                    We have a very big variety of pizza from all around the world for any taste and
+                                    person.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="section-customize" id="customize">
+                <div class="container">
+                    <p class="sub-title">Customize</p>
+                    <h2 class="heading-secondary">Be a chef and make your own special pizza</h2>
+                </div>
+                <div class="container">
+                    <div class="customize">
+                        <div class="output">
+                            <div class="stack">
+                                <img src="img/customize/dough/Plate.png" alt="Plate image" loading="lazy"
+                                     class="plate-img">
+                                <img src="img/customize/dough/Simple.png" class="customize-img dough-img"
+                                     alt="Simple dough image"
+                                     loading="lazy">
+                                <img src="img/customize/dough/Italian.png" class="customize-img dough-img"
+                                     alt="Italian dough image"
+                                     loading="lazy">
+                                <img src="img/customize/dough/American.png" class="customize-img dough-img"
+                                     alt="American dough image"
+                                     loading="lazy">
+                                <img src="img/customize/sauce/Smoky.png" class="customize-img sauce-img"
+                                     alt="Smoky sauce image"
+                                     loading="lazy">
+                                <img src="img/customize/sauce/Ketchup.png" class="customize-img sauce-img"
+                                     alt="Ketchup sauce image"
+                                     loading="lazy">
+                                <img src="img/customize/sauce/Mexican.png" class="customize-img sauce-img"
+                                     alt="Mexican sauce image"
+                                     loading="lazy">
+                                <img src="img/customize/sauce/Pesto.png" class="customize-img sauce-img"
+                                     alt="Pesto sauce image"
+                                     loading="lazy">
+                                <img src="img/customize/sauce/Garlic.png" class="customize-img sauce-img"
+                                     alt="Garlic sauce image"
+                                     loading="lazy">
+                                <img src="img/customize/cheese/Mozzarella.png" class="customize-img cheese-img"
+                                     alt="Mozzarella cheese image"
+                                     loading="lazy">
+                                <img src="img/customize/cheese/Cheddar.png" class="customize-img cheese-img"
+                                     alt="Cheddar cheese image"
+                                     loading="lazy">
+                                <img src="img/customize/cheese/Gouda.png" class="customize-img cheese-img"
+                                     alt="Gouda cheese image"
+                                     loading="lazy">
+                                <img src="img/customize/protein/Steak.png" class="customize-img protein-img"
+                                     alt="Steak image"
+                                     loading="lazy">
+                                <img src="img/customize/protein/Meatball.png" class="customize-img protein-img"
+                                     alt="Meatball image"
+                                     loading="lazy">
+                                <img src="img/customize/protein/CheeseSausage.png" class="customize-img protein-img"
+                                     alt="Cheese sausage image"
+                                     loading="lazy">
+                                <img src="img/customize/protein/Salami.png" class="customize-img protein-img"
+                                     alt="Salami image"
+                                     loading="lazy">
+                                <img src="img/customize/protein/Pepperoni.png" class="customize-img protein-img"
+                                     alt="Pepperoni image"
+                                     loading="lazy">
+                                <img src="img/customize/protein/Bacon.png" class="customize-img protein-img"
+                                     alt="Bacon image"
+                                     loading="lazy">
+                                <img src="img/customize/protein/TurkeyHam.png" class="customize-img protein-img"
+                                     alt="Turkey ham image"
+                                     loading="lazy">
+                                <img src="img/customize/protein/Ham.png" class="customize-img protein-img"
+                                     alt="Ham image"
+                                     loading="lazy">
+                                <img src="img/customize/protein/GrilledChicken.png" class="customize-img protein-img"
+                                     alt="Grilled chicken image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/Eggplant.png" class="customize-img vegetable-img"
+                                     alt="Eggplant image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/Courgette.png" class="customize-img vegetable-img"
+                                     alt="Courgette image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/BlackOlive.png" class="customize-img vegetable-img"
+                                     alt="Black olive image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/GreenOlive.png" class="customize-img vegetable-img"
+                                     alt="Green olive image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/Jalopino.png" class="customize-img vegetable-img"
+                                     alt="Jalopino pepper image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/BellPepper.png" class="customize-img vegetable-img"
+                                     alt="Bell pepper image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/Brockley.png" class="customize-img vegetable-img"
+                                     alt="Brockley image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/Spinach.png" class="customize-img vegetable-img"
+                                     alt="Spinach image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/Corn.png" class="customize-img vegetable-img"
+                                     alt="Corn image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/DriedTomato.png" class="customize-img vegetable-img"
+                                     alt="Dried tomato image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/Tomato.png" class="customize-img vegetable-img"
+                                     alt="Tomato image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/Onion.png" class="customize-img vegetable-img"
+                                     alt="Onion image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/Mushroom.png" class="customize-img vegetable-img"
+                                     alt="Mushroom image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/BlueCheese.png" class="customize-img vegetable-img"
+                                     alt="Blue cheese image"
+                                     loading="lazy">
+                                <img src="img/customize/vegetable/PestoCheese.png" class="customize-img vegetable-img"
+                                     alt="Pesto cheese image"
+                                     loading="lazy">
+                            </div>
+                            <div class="customize-specifications">
+                                <div class="customize-specification">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/vaeagfzc.json"
+                                            class="icon"
+                                            trigger="hover"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    
+                                    <span class="customize-specification-text"><strong>$</strong><strong
+                                            class="customize-specification-number">0</strong></span>
+                                </div>
+                                
+                                <div class="customize-specification">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/zbdlroww.json"
+                                            class="icon"
+                                            trigger="hover"
+                                            colors="primary:#f7921e,secondary:#f7921e"
+                                            stroke="85">
+                                    </lord-icon>
+                                    <span class="customize-specification-text"><strong
+                                            class="customize-specification-number">0 </strong> <span class="calories">calories</span></span>
+                                </div>
+                                
+                                <a href="#" class="side-buy-btn">
+                                    <lord-icon
+                                            src="https://cdn.lordicon.com/dnoiydox.json"
+                                            class="customize-buy-icon"
+                                            trigger="hover"
+                                            colors="primary:#000000,secondary:#000000"
+                                            stroke="85">
+                                    </lord-icon>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="toppings">
+                            <button class="topping">
+                                <img src="img/customize/dough/Simple.png" class="topping-img" alt="Simple dough image"
+                                     loading="lazy">
+                                <span class="topping-name">Simple</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/dough/Italian.png" class="topping-img" alt="Italian dough image"
+                                     loading="lazy">
+                                <span class="topping-name">Italian</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/dough/American.png" class="topping-img"
+                                     alt="American dough image"
+                                     loading="lazy">
+                                <span class="topping-name">American</span>
+                            </button>
+                        </div>
+                        
+                        <div class="toppings">
+                            <button class="topping">
+                                <img src="img/customize/sauce/Smoky.png" class="topping-img" alt="Smoky sauce image"
+                                     loading="lazy">
+                                <span class="topping-name">Smoky</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/sauce/Ketchup.png" class="topping-img" alt="Ketchup sauce image"
+                                     loading="lazy">
+                                <span class="topping-name">Ketchup</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/sauce/Mexican.png" class="topping-img" alt="Mexican sauce image"
+                                     loading="lazy">
+                                <span class="topping-name">Mexican</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/sauce/Pesto.png" class="topping-img" alt="Pesto sauce image"
+                                     loading="lazy">
+                                <span class="topping-name">Pesto</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/sauce/Garlic.png" class="topping-img" alt="Garlic sauce image"
+                                     loading="lazy">
+                                <span class="topping-name">Garlic</span>
+                            </button>
+                        </div>
+                        
+                        <div class="toppings">
+                            <button class="topping">
+                                <img src="img/customize/cheese/MozzarellaSm.png" class="topping-img"
+                                     alt="Mozzarella cheese image"
+                                     loading="lazy">
+                                <span class="topping-name">Mozzarella</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/cheese/CheddarSm.png" class="topping-img"
+                                     alt="Cheddar cheese image"
+                                     loading="lazy">
+                                <span class="topping-name">Cheddar</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/cheese/GoudaSm.png" class="topping-img" alt="Gouda cheese image"
+                                     loading="lazy">
+                                <span class="topping-name">Gouda</span>
+                            </button>
+                        </div>
+                        
+                        <div class="toppings">
+                            <button class="topping">
+                                <img src="img/customize/protein/SteakSm.png" class="topping-img" alt="Steak image"
+                                     loading="lazy">
+                                <span class="topping-name">Steak</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/protein/MeatballSm.png" class="topping-img" alt="Meatball image"
+                                     loading="lazy">
+                                <span class="topping-name">Meatball</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/protein/CheeseSausageSm.png" class="topping-img"
+                                     alt="Cheese sausage image"
+                                     loading="lazy">
+                                <span class="topping-name">Cheese sausage</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/protein/SalamiSm.png" class="topping-img" alt="Salami image"
+                                     loading="lazy">
+                                <span class="topping-name">Salami</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/protein/PepperoniSm.png" class="topping-img" alt="Pepperoni image"
+                                     loading="lazy">
+                                <span class="topping-name">Pepperoni</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/protein/BaconSm.png" class="topping-img" alt="Bacon image"
+                                     loading="lazy">
+                                <span class="topping-name">Bacon</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/protein/TurkeyHamSm.png" class="topping-img" alt="Turkey ham image"
+                                     loading="lazy">
+                                <span class="topping-name">Turkey ham</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/protein/HamSm.png" class="topping-img" alt="Ham image"
+                                     loading="lazy">
+                                <span class="topping-name">Ham</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/protein/GrilledChickenSm.png" class="topping-img"
+                                     alt="Grilled chicken image"
+                                     loading="lazy">
+                                <span class="topping-name">Grilled chicken</span>
+                            </button>
+                        </div>
+                        
+                        <div class="toppings vegetable">
+                            <button class="topping">
+                                <img src="img/customize/vegetable/EggplantSm.png" class="topping-img" alt="Eggplant image"
+                                     loading="lazy">
+                                <span class="topping-name">Eggplant</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/CourgetteSm.png" class="topping-img"
+                                     alt="Courgette image"
+                                     loading="lazy">
+                                <span class="topping-name">Courgette</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/BlackOliveSm.png" class="topping-img"
+                                     alt="Black olive image"
+                                     loading="lazy">
+                                <span class="topping-name">Black olive</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/GreenOliveSm.png" class="topping-img"
+                                     alt="Green olive image"
+                                     loading="lazy">
+                                <span class="topping-name">Green olive</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/JalopinoSm.png" class="topping-img"
+                                     alt="Jalopino pepper image"
+                                     loading="lazy">
+                                <span class="topping-name">Jalopino</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/BellPepperSm.png" class="topping-img"
+                                     alt="Bell pepper image"
+                                     loading="lazy">
+                                <span class="topping-name">Bell pepper</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/BrockleySm.png" class="topping-img" alt="Brockley image"
+                                     loading="lazy">
+                                <span class="topping-name">Brockley</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/SpinachSm.png" class="topping-img" alt="Spinach image"
+                                     loading="lazy">
+                                <span class="topping-name">Spinach</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/CornSm.png" class="topping-img" alt="Corn image"
+                                     loading="lazy">
+                                <span class="topping-name">Corn</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/DriedTomatoSm.png" class="topping-img"
+                                     alt="Dried tomato image"
+                                     loading="lazy">
+                                <span class="topping-name">Dried tomato</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/TomatoSm.png" class="topping-img" alt="Tomato image"
+                                     loading="lazy">
+                                <span class="topping-name">Tomato</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/OnionSm.png" class="topping-img" alt="Onion image"
+                                     loading="lazy">
+                                <span class="topping-name">Onion</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/MushroomSm.png" class="topping-img" alt="Mushroom image"
+                                     loading="lazy">
+                                <span class="topping-name">Mushroom</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/BlueCheeseSm.png" class="topping-img"
+                                     alt="Blue cheese image"
+                                     loading="lazy">
+                                <span class="topping-name">Blue cheese</span>
+                            </button>
+                            
+                            <button class="topping">
+                                <img src="img/customize/vegetable/PestoCheeseSm.png" class="topping-img"
+                                     alt="Pesto cheese image"
+                                     loading="lazy">
+                                <span class="topping-name">Pesto cheese</span>
+                            </button>
+                        </div>
+                        
+                        <div class="customize-bar">
+                            <button class="step">
+                                <img src="img/customize/dough/American.png" class="step-img" alt="Dough image"
+                                     loading="lazy">
+                                <span class="step-name">Dough</span>
+                            </button>
+                            
+                            <button class="step">
+                                <img src="img/customize/sauce/Sauce.png" class="step-img" alt="Sauce image"
+                                     loading="lazy">
+                                <span class="step-name">Sauce</span>
+                            </button>
+                            
+                            <button class="step">
+                                <img src="img/customize/cheese/MozzarellaSm.png" class="step-img" alt="Cheese image"
+                                     loading="lazy">
+                                <span class="step-name">Cheese</span>
+                            </button>
+                            
+                            <button class="step">
+                                <img src="img/customize/protein/BaconSm.png" class="step-img" alt="Protein image"
+                                     loading="lazy">
+                                <span class="step-name">Protein</span>
+                            </button>
+                            
+                            <button class="step">
+                                <img src="img/customize/vegetable/BrockleySm.png" class="step-img" alt="Vegetable image"
+                                     loading="lazy">
+                                <span class="step-name">Vegetable</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        
+        <div class="wave-container">
+            <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                 viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+                <defs>
+                    <path id="gentle-wave"
+                          d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z"/>
+                </defs>
+                <g class="parallax">
+                    <use xlink:href="#gentle-wave" x="48" y="0" fill="#fde9d270"/>
+                    <use xlink:href="#gentle-wave" x="48" y="3" fill="#fde9d250"/>
+                    <use xlink:href="#gentle-wave" x="48" y="5" fill="#fde9d230"/>
+                    <use xlink:href="#gentle-wave" x="48" y="7" fill="#fde9d2"/>
+                </g>
+            </svg>
+        </div>
+        
+        <footer class="footer">
+            <div class="container grid grid--footer">
+                <div class="logo-col">
+                    <a class="logo footer-logo" href="#">
+                        <lord-icon
+                                src="https://cdn.lordicon.com/jpdtnwas.json"
+                                class="logo-icon"
+                                trigger="hover"
+                                colors="primary:#f7921e,secondary:#f7921e"
+                                stroke="85">
+                        </lord-icon>
+                        <p class="logo-text">PizzaHut</p>
+                    </a>
+                    
+                    <ul class="social-links">
+                        <li>
+                            <a href="#" class="footer-link">
+                                <ion-icon name="logo-instagram" class="social-icon"></ion-icon>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer-link">
+                                <ion-icon name="logo-facebook" class="social-icon"></ion-icon>
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer-link">
+                                <ion-icon name="logo-twitter" class="social-icon"></ion-icon>
+                            </a>
+                        </li>
+                    </ul>
+                    
+                    <p class="copyright">Copyright &copy; <span class="year">2027</span> by PizzaHut Inc. All rights
+                        reserved.</p>
+                </div>
+                
+                <div class="address-col">
+                    <p class="footer-heading">Contact us</p>
+                    <address class="contacts">
+                        <p class="address">888 Harrison St., 2nd Floor, San Francisco, CA 88088</p>
+                        
+                        <p>
+                            <a href="tel:415-201-6370" class="footer-link">
+                                415-201-8888
+                            </a>
+                            
+                            <br>
+                            
+                            <a href="mailto:hello@omnifood.com" class="footer-link">
+                                hello@PizzaHut.com
+                            </a>
+                        </p>
+                    </address>
+                </div>
+                
+                <nav class="nav-col">
+                    <p class="footer-heading">Account</p>
+                    
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="#" class="footer-link">
+                                Create account
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer-link">
+                                Sign in
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer-link">
+                                iOS app
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer-link">
+                                Android app
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <nav class="nav-col">
+                    <p class="footer-heading">Company</p>
+                    
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="#" class="footer-link">
+                                About PizzaHut
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer-link">
+                                For Business
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer-link">
+                                Cooking partners
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer-link">
+                                Careers
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                
+                <nav class="nav-col">
+                    <p class="footer-heading">Resources</p>
+                    
+                    <ul class="footer-nav">
+                        <li>
+                            <a href="#" class="footer-link">
+                                Recipe directory
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer-link">
+                                Help center
+                            </a>
+                        </li>
+                        
+                        <li>
+                            <a href="#" class="footer-link">
+                                Privacy & terms
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </footer>
+    </body>
+</html>
