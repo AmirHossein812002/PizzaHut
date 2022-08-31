@@ -190,18 +190,19 @@ observer.observe(sectionHeroEl);
 
 const calEl = document.querySelector(".calories");
 
-// window.matchMedia("(max-width:39em)").addEventListener('change', function (e) {
-//     if (window.matchMedia("(max-width:39em)").matches) {
-//         calEl.textContent = "cal";
-//     } else {
-//         calEl.textContent = "calories";
-//     }
-// });
-
-window.matchMedia("(max-width:39em)").addListener(function () {
+window.matchMedia("(max-width:39em)").addEventListener('change', function (e) {
     if (window.matchMedia("(max-width:39em)").matches) {
         calEl.textContent = "cal";
     } else {
         calEl.textContent = "calories";
     }
 });
+
+let width = screen.width;
+width*=(window.devicePixelRatio || 1);
+
+if (width <= '39em') {
+    calEl.textContent = "cal";
+} else {
+    calEl.textContent = "calories";
+}
