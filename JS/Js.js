@@ -201,7 +201,7 @@ window.matchMedia("(max-width:39em)").addEventListener('change', function (e) {
 let width = screen.width;
 width*=(window.devicePixelRatio || 1);
 
-if (width <= '39em') {
+if (width <= 39 * parseInt(document.querySelector("html").style.fontSize)){
     calEl.textContent = "cal";
 } else {
     calEl.textContent = "calories";
