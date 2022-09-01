@@ -198,7 +198,7 @@ window.matchMedia("(max-width:39em)").addEventListener('change', function (e) {
     }
 });
 
-let width = screen.width;
+let width = window.screen.width;
 width*=(window.devicePixelRatio || 1);
 
 if (width <= 624){
@@ -206,3 +206,55 @@ if (width <= 624){
 } else {
     calEl.textContent = "calories";
 }
+
+//**************************
+//SMOOTH SCROLLING ANIMATION
+//**************************
+
+const allLinks = document.querySelectorAll('a:link');
+allLinks.forEach(function (link) {
+    link.addEventListener('click', function (e) {
+        e.preventDefault();
+        const href = link.getAttribute('href');
+        console.log(href);
+        //scroll back to the top
+        if (href === "#") window.scrollTo( {
+            top: 0,
+            behavior: "smooth"
+        });
+        
+        if (href !== "#" && href.startsWith("#")) {
+            const sectionEl = document.querySelector(href);
+            sectionEl.scrollIntoView({
+                behavior: "smooth"
+            });
+            
+            //    close mobile nav
+            if (link.classList.contains('main-nav-link'))
+                headerEl.classList.toggle("nav-open");
+        }
+    });
+});
+
+//******************
+// FIXING SAFARI GAP
+//******************
+
+function checkFlexGap() {
+    var flex = document.createElement("div");
+    flex.style.display = "flex";
+    flex.style.flexDirection = "column";
+    flex.style.rowGap = "1px";
+    
+    flex.appendChild(document.createElement("div"));
+    flex.appendChild(document.createElement("div"));
+    
+    document.body.appendChild(flex);
+    var isSupported = flex.scrollHeight === 1;
+    flex.parentNode.removeChild(flex);
+    console.log(isSupported);
+    
+    if (!isSupported) document.body.classList.add("no-flexbox-gap");
+}
+
+checkFlexGap();
