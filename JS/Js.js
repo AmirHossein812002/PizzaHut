@@ -236,6 +236,13 @@ allLinks.forEach(function (link) {
     });
 });
 
+const mainNavLinksEl = document.querySelectorAll(".main-nav-link");
+for (let i = 0; i < 3; i++) {
+    mainNavLinksEl[i].addEventListener('click', function () {
+        document.querySelector(".ham").classList.toggle("active");
+    });
+}
+
 //******************
 // FIXING SAFARI GAP
 //******************
